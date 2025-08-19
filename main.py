@@ -7,6 +7,7 @@ if __name__ == "__main__":
     url = "https://api.github.com/search/issues?q=is:pr+author:mahimairaja+is:merged"
 
     r = requests.get(url)
+
     if r.status_code == 200:
         pr_data = r.json()
         pr_list = []
