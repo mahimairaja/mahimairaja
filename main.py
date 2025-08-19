@@ -11,27 +11,21 @@ if __name__ == "__main__":
     if r.status_code == 200:
         pr_data = r.json()
         pr_list = []
-        emoji = ["🥳", "🎉", "🎊", "🥂", "🙌🏼"]
         count = 0
         total_merged_prs = pr_data["total_count"]
         total_merged_prs_content = f"""  <span><img src="https://img.shields.io/badge/Total_Merged_PRs-{total_merged_prs}-1877F2?style=for-the-badge"></span>"""
 
         for item in pr_data["items"]:
-            emoticon = emoji[round(count % 5)]
             pull_request_url = item["html_url"]
             new_repo_url = re.sub(r"/pull/\d+", "", pull_request_url)
             serial_number = count + 1
 
             pr_list.append(
-                f"{serial_number}. {emoticon} Merged PR [{item['number']}]({pull_request_url}) - [{item['repository_url'][29:]}]({new_repo_url})"
+                f"{serial_number}. Merged PR [{item['number']}]({pull_request_url}) - [{item['repository_url'][29:]}]({new_repo_url})"
             )
             count = count + 1
 
-            # Provide the number of PRs you want to show in the README
-            if count == 5:
-                break
-
-        pr_content = "\n".join(pr_list)
+        pr_content = "\n".join(pr_list[:7])
 
         print("\n\n", pr_content, "\n\n")
 
