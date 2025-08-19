@@ -34,7 +34,7 @@ if __name__ == "__main__":
         pr_content = "\n".join(pr_list)
 
         # Read and Write the New ReadMe Content
-        with open("README.md", "r") as f:
+        with open("README.MD", "r") as f:
             readme_content = f.read()
 
         new_readme_content = re.sub(
@@ -48,5 +48,5 @@ if __name__ == "__main__":
             flags=re.DOTALL,
         )
 
-        with open("README.md", "w") as f:
+        with open("README.MD", "w") as f:
             f.write(new_readme_content)
