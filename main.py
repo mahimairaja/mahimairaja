@@ -4,7 +4,7 @@ import requests
 
 if __name__ == "__main__":
     # Replace the author name with your GitHub username
-    url = "https://api.github.com/search/issues?q=is:pr+author:mahimairaja+is:merged"
+    url = "https://api.github.com/search/issues?q=is:pr+author:mahimairaja+is:merged&sort=updated&order=desc"
 
     r = requests.get(url)
 
