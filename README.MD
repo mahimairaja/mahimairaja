@@ -12,5 +12,3 @@ Open Source with Kuriousity 🐬
 5. Merged PR [27](https://github.com/richarddushime/Implementing-Facial-Recognition-and-Biometric-Attendance-Monitoring-in-Educational-and-Corporate-Set/pull/27) - [richarddushime/Implementing-Facial-Recognition-and-Biometric-Attendance-Monitoring-in-Educational-and-Corporate-Set](https://github.com/richarddushime/Implementing-Facial-Recognition-and-Biometric-Attendance-Monitoring-in-Educational-and-Corporate-Set)
 6. Merged PR [14](https://github.com/arindal1/yolov5-onnx-object-recognition/pull/14) - [arindal1/yolov5-onnx-object-recognition](https://github.com/arindal1/yolov5-onnx-object-recognition)
 7. Merged PR [19958](https://github.com/openvinotoolkit/openvino/pull/19958) - [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino)
-
-<!--Finish Merged PRs-->
