@@ -33,18 +33,25 @@ if __name__ == "__main__":
 
         pr_content = "\n".join(pr_list)
 
+        print("\n\n", pr_content, "\n\n")
+
         # Read and Write the New ReadMe Content
         with open("README.MD", "r") as f:
             readme_content = f.read()
 
+            # First, update the count section
         new_readme_content = re.sub(
-            r"(\<!--Start Count Merged PRs-->\n)(.*?)(\<!--Finish Count Merged PRs-->\n)|(\<!--Start Merged PRs-->\n)(.*?)(\<!--Finish Merged PRs-->\n)",
-            lambda m: (
-                f"{m.group(1)}{total_merged_prs_content}\n{m.group(3)}"
-                if m.group(1)
-                else f"{m.group(4)}{pr_content}\n{m.group(6)}"
-            ),
+            r"(\<!--Start Count Merged PRs-->\n)(.*?)(\<!--Finish Count Merged PRs-->\n)",
+            lambda m: f"{m.group(1)}{total_merged_prs_content}\n{m.group(3)}",
             readme_content,
+            flags=re.DOTALL,
+        )
+
+        # Then, update the PR list section
+        new_readme_content = re.sub(
+            r"(\<!--Start Merged PRs-->\n)(.*?)(\n\<!--Finish Merged PRs-->\n)",
+            lambda m: f"{m.group(1)}{pr_content}\n{m.group(3)}",
+            new_readme_content,
             flags=re.DOTALL,
         )
 
