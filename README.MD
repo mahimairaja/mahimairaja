@@ -1,4 +1,6 @@
-Open Source with Kuriousity 🐬
+I am **Software Developer** with strong determination to become Expert in several years. 
+
+I speak: ***Python***, **JavsScript**, **C#**, **Java**
 
 <!--Start Count Merged PRs-->
   <span><img src="https://img.shields.io/badge/Total_Merged_PRs-16-1877F2?style=for-the-badge"></span>
