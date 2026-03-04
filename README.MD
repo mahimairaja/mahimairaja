@@ -3,7 +3,7 @@ I am **Software Developer** with strong determination to become Expert in severa
 I speak: ***Python***, **JavsScript**, **C#**, **Java**
 
 <!--Start Count Merged PRs-->
-  <span><img src="https://img.shields.io/badge/Total_Merged_PRs-85-1877F2?style=for-the-badge"></span>
+  <span><img src="https://img.shields.io/badge/Total_Merged_PRs-86-1877F2?style=for-the-badge"></span>
 <!--Finish Count Merged PRs-->
 
 <!--Start Merged PRs-->
