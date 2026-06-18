@@ -5,7 +5,7 @@ I speak: ***Python***, **JavsScript**, **C#**, **Java**
 Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
 <!--Start Count Merged PRs-->
-  <span><img src="https://img.shields.io/badge/Total_Merged_PRs-283-1877F2?style=for-the-badge"></span>
+  <span><img src="https://img.shields.io/badge/Total_Merged_PRs-291-1877F2?style=for-the-badge"></span>
 <!--Finish Count Merged PRs-->
 
 <!--Start Merged PRs-->
