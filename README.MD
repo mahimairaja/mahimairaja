@@ -1,6 +1,6 @@
 I am **Software Developer** with strong determination to become Expert in several years. 
 
-I speak: ***Python***, **JavsScript**, **C#**, **Java**
+I speak: ***Python***, and little **JavaScript** and I love types :) 
 
 Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
