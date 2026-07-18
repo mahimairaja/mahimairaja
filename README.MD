@@ -6,13 +6,15 @@ Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
 **I created and maintaining:**
 
-- voicegateway - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway)
-- openrtc - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc)
-- fastrtc-whisper-cpp - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp)
-- fastrtc-canary - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary)
-- envoic - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/envoic)
-- vapiserve - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/locallens)
-- locallens - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/locallens)
+| Package | Downloads |
+|---------|-----------|
+| **voicegateway** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
+| **openrtc** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
+| **fastrtc-whisper-cpp** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
+| **fastrtc-canary** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
+| **envoic** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/envoic) |
+| **vapiserve** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
+| **locallens** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/locallens) |
 
 
 
