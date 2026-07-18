@@ -4,7 +4,7 @@ I speak: ***Python***, and little **JavaScript** and I love types :)
 
 Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
-** I created and maintaining: **
+**I created and maintaining:**
 
 - voicegateway - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway)
 - openrtc - [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc)
