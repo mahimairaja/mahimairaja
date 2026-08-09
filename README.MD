@@ -1,4 +1,4 @@
-I am **Software Developer** with strong determination to become Expert in several years. 
+I am a **Voice AI Engineer** with strong determination to become Expert in several years. 
 
 ```
 Learning gives Creativity,
@@ -14,7 +14,7 @@ I speak: ***Python***, and little **JavaScript** and I love types :)
 
 Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
-**I created and maintaining:**
+**Creator and maintaining:**
 
 | Package | Downloads |
 |---------|-----------|
@@ -25,6 +25,10 @@ Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 | **envoic** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/envoic) |
 | **vapiserve** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
 | **locallens** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/locallens) |
+
+Always happy to connect and exchange idea. Feel free to DM. I am friendly :)
+
+https://cal.com/mahimairaja/discovery
 
 
 
