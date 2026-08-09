@@ -1,5 +1,15 @@
 I am **Software Developer** with strong determination to become Expert in several years. 
 
+```
+Learning gives Creativity,
+
+Creativity leads to Thinking,
+
+Thinking provides knowledge,
+
+Knowledge makes you great
+```
+
 I speak: ***Python***, and little **JavaScript** and I love types :) 
 
 Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
