@@ -28,8 +28,7 @@ Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
 
 Always happy to connect and exchange idea. Feel free to DM. I am friendly :)
 
-https://cal.com/mahimairaja/discovery
-
+Hire me: https://cal.com/mahimairaja/discovery
 
 
 <!--Start Count Merged PRs-->
