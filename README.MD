@@ -1,34 +1,42 @@
-I am a **Voice AI Engineer** with strong determination to become Expert in several years. 
+### Voice AI Engineer
 
-```
-Learning gives Creativity,
+I build voice AI systems that hold up in production. Speech models,
+real-time infrastructure, and the orchestration layer in between.
 
-Creativity leads to Thinking,
+Founder of [Mahimai AI Solutions](https://mahimai.ca) — production voice
+AI on the open stack: LiveKit and Pipecat.
 
-Thinking provides knowledge,
+**What I work on**
+- Fine tuning and evaluating TTS and STT models
+- Real-time voice infrastructure: LiveKit, Pipecat, WebRTC, SIP
+- Linguistic frontend, turn-taking, and interruption handling
+- Concurrency, latency, and cost at production scale
 
-Knowledge makes you great
-```
+**Contributor to** [livekit-agents](https://github.com/livekit/agents) ·
+[FastRTC](https://github.com/gradio-app/fastrtc)
 
-I speak: ***Python***, and little **JavaScript** and I love types :) 
+**Author of** [Voice Agents Handbook](https://handbook.mahimai.ca/)
 
-Read my book - [**Voice Agents Handbook**](https://handbook.mahimai.ca/)
+---
 
-**Creator and maintaining:**
+### Building
 
-| Package | Downloads |
-|---------|-----------|
-| **voicegateway** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
-| **openrtc** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
-| **fastrtc-whisper-cpp** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
-| **fastrtc-canary** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
-| **envoic** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/envoic) |
-| **vapiserve** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
-| **locallens** | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/locallens) |
+| Package | What it does | Downloads |
+|---|---|---|
+| **voicegateway** | Observability and inference routing for voice AI | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
+| **openrtc** | Shared memory layer for multi-agent LiveKit workers |[![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
+| **envoic** | Horizontal voice AI infrastructure toolkit |[![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/envoic) |
+| **fastrtc-whisper-cpp** | whisper.cpp STT backend for FastRTC |[![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
+| **fastrtc-canary** | NVIDIA Canary STT backend for FastRTC | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
+| **vapiserve** | Custom tool server for Vapi | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
+| **locallens** | Local inference tooling | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/locallens) |
 
-Always happy to connect and exchange idea. Feel free to DM. I am friendly :)
+Python, with Go where it matters.
 
-Hire me: https://cal.com/mahimairaja/discovery
+---
+
+Available for voice AI consulting.
+[Book a call](https://cal.com/mahimairaja/consulting)
 
 
 <!--Start Count Merged PRs-->
