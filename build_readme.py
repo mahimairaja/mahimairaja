@@ -93,7 +93,8 @@ def fetch(url: str, *, data: bytes | None = None, accept: str = 'application/jso
 
     GitHub signals a rate limit with 429, or with 403 plus a Retry-After header, a zero
     remaining quota, or "rate limit" in the body. Those wait as long as GitHub asks (up to
-    90 s) and retry; any other error is raised with GitHub's own message, for the log.
+    90 s) and retry. A 401 or 403 that refuses the token itself is retried once without it,
+    since every source here is public. Any other error is raised with GitHub's own message.
     """
     headers = {'User-Agent': f'{USER}-profile-readme', 'Accept': accept}
     if TOKEN and url.startswith('https://api.github.com/'):
@@ -108,6 +109,12 @@ def fetch(url: str, *, data: bytes | None = None, accept: str = 'application/jso
             reset = e.headers.get('X-RateLimit-Reset')
             limited = e.code == 429 or (e.code == 403 and (
                 retry_after or e.headers.get('X-RateLimit-Remaining') == '0' or 'rate limit' in body.lower()))
+            # Everything read here is public. When an organization refuses the token itself (for
+            # example a policy on token lifetime), ask again without it rather than lose the section.
+            if e.code in (401, 403) and not limited and 'Authorization' in headers and data is None:
+                print(f'  {url.split("?")[0]}: token refused ({body.strip()[:120]}); retrying without it')
+                del headers['Authorization']
+                continue
             if not (limited or e.code in (500, 502, 503, 504)) or attempt == 3:
                 raise RuntimeError(f'HTTP {e.code} from {url.split("?")[0]}: {body.strip()}') from None
             wait = 2 ** attempt
