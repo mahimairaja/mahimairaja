@@ -450,19 +450,21 @@ def main() -> None:
     refs = section('references', references)
     days = section('waveform', contribution_days)
 
-    if posts:
+    # None means the source failed and the section keeps what it had; an empty list is a real
+    # answer (no posts, no qualifying PRs) and replaces stale content.
+    if posts is not None:
         readme = replace_chunk(readme, 'writing', writing_md(posts))
-    if prs:
+    if prs is not None:
         readme = replace_chunk(readme, 'upstream', upstream_md(prs))
         readme = replace_chunk(readme, 'upstream_count', f'{len(prs)}', inline=True)
         readme = replace_chunk(readme, 'upstream_projects', f'{len({p["repo"] for p in prs})}', inline=True)
         CONTRIBUTIONS.write_text(contributions_page(prs) + '\n')
-    if pkgs:
+    if pkgs is not None:
         readme = replace_chunk(readme, 'releases', releases_md(pkgs))
         readme = replace_chunk(readme, 'packages', packages_md(pkgs))
-    if refs:
+    if refs is not None:
         readme = replace_chunk(readme, 'references', references_md(refs))
-    if days:
+    if days is not None:
         since = date.today() - timedelta(days=365)
         total = sum(c for d, c in days if d > since)
         summary = f'{total:,} contributions in the last 12 months'
@@ -471,7 +473,7 @@ def main() -> None:
 
     README.write_text(readme)
     print('Updated:', ', '.join(n for n, v in [('writing', posts), ('upstream', prs), ('packages', pkgs),
-                                              ('references', refs), ('waveform', days)] if v) or 'nothing')
+                                              ('references', refs), ('waveform', days)] if v is not None) or 'nothing')
 
 
 if __name__ == '__main__':
