@@ -43,18 +43,18 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Upstream
 <!-- upstream starts -->
-[Add to onboarding reproduction logs](https://github.com/castorini/anserini/pull/3364)<br><sub>castorini/anserini #3364 · 2026-08-05</sub>
+[Add to onboarding reproduction logs](https://github.com/castorini/anserini/pull/3364)<br><sub>castorini/anserini · Aug 2026</sub>
 
-[feat: add livekit-plugins-sambanova with LLM support](https://github.com/livekit/agents/pull/4910)<br><sub>livekit/agents #4910 · 2026-02-24</sub>
+[feat: add livekit-plugins-sambanova with LLM support](https://github.com/livekit/agents/pull/4910)<br><sub>livekit/agents · Feb 2026</sub>
 
-[🐛 Fix `--help` text alignment when using `typer.style()` in option descriptions](https://github.com/fastapi/typer/pull/1356)<br><sub>fastapi/typer #1356 · 2026-02-10</sub>
+[🐛 Fix `--help` text alignment when using `typer.style()` in option descriptions](https://github.com/fastapi/typer/pull/1356)<br><sub>fastapi/typer · Feb 2026</sub>
 
-[Feat: FastRTC version of Whisper CPP speech to text to Docs](https://github.com/gradio-app/fastrtc/pull/324)<br><sub>gradio-app/fastrtc #324 · 2025-05-30</sub>
+[Feat: FastRTC version of Whisper CPP speech to text to Docs](https://github.com/gradio-app/fastrtc/pull/324)<br><sub>gradio-app/fastrtc · May 2025</sub>
 
-[feat: Added documentation for twilio integration](https://github.com/gradio-app/fastrtc/pull/125)<br><sub>gradio-app/fastrtc #125 · 2025-03-06</sub>
+[feat: Added documentation for twilio integration](https://github.com/gradio-app/fastrtc/pull/125)<br><sub>gradio-app/fastrtc · Mar 2025</sub>
 <!-- upstream ends -->
 
-<!-- upstream_count starts -->9<!-- upstream_count ends --> merged PRs across <!-- upstream_projects starts -->8<!-- upstream_projects ends --> projects · [all of them](contributions.md)
+[All <!-- upstream_count starts -->9<!-- upstream_count ends --> merged PRs across <!-- upstream_projects starts -->8<!-- upstream_projects ends --> projects →](contributions.md)
 </td>
 </tr>
 <tr>
@@ -77,15 +77,15 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Reference lists I maintain
 <!-- references starts -->
-[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 329 · updated 2026-09-27</sub>
+[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 329 · updated Sep 2026</sub>
 
-[Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 4 · updated 2026-09-27</sub>
+[Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 4 · updated Sep 2026</sub>
 
-[Awesome TTS](https://tts.mahimai.ca) · [repo](https://github.com/mahimairaja/tts)<br><sub>★ 18 · updated 2026-09-27</sub>
+[Awesome TTS](https://tts.mahimai.ca) · [repo](https://github.com/mahimairaja/tts)<br><sub>★ 18 · updated Sep 2026</sub>
 
-[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 4 · updated 2026-09-27</sub>
+[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 4 · updated Sep 2026</sub>
 
-[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated 2026-09-26</sub>
+[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Sep 2026</sub>
 <!-- references ends -->
 </td>
 </tr>
