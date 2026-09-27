@@ -1,0 +1,39 @@
+name: Build README
+
+# Rebuilds the live sections of README.MD, the SVGs in assets/ and contributions.md, then
+# commits them if anything changed. See build_readme.py.
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *' # every six hours
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-readme-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild README
+        env:
+          # PROFILE_TOKEN is optional: a personal token lets the waveform count private
+          # contributions (if your profile shows them) and raises rate limits.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python build_readme.py
+      - name: Commit and push if changed
+        run: |
+          git diff --stat
+          git config user.name "github-actions[bot]"
+          git config user.email "41898275+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update README" || exit 0
+          git push
