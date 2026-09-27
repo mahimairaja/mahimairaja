@@ -28,13 +28,13 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
-[How your voice travels through WebRTC: Voice AI agents edition](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>2026-09-23</sub>
+[How your voice travels through WebRTC: Voice AI agents edition](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>Sep 2026</sub>
 
-[Your smoke run is lying to you](https://mahimai.ca/blog/your-smoke-run-is-lying-to-you)<br><sub>2026-08-18</sub>
+[Your smoke run is lying to you](https://mahimai.ca/blog/your-smoke-run-is-lying-to-you)<br><sub>Aug 2026</sub>
 
-[Building a phone line in PyTorch](https://mahimai.ca/blog/building-a-phone-line-in-pytorch)<br><sub>2026-08-15</sub>
+[Building a phone line in PyTorch](https://mahimai.ca/blog/building-a-phone-line-in-pytorch)<br><sub>Aug 2026</sub>
 
-[The normaliser that scored itself](https://mahimai.ca/blog/the-normaliser-that-scored-itself)<br><sub>2026-08-13</sub>
+[The normaliser that scored itself](https://mahimai.ca/blog/the-normaliser-that-scored-itself)<br><sub>Aug 2026</sub>
 <!-- writing ends -->
 
 More on [mahimai.ca/blog](https://mahimai.ca/blog)
@@ -62,15 +62,15 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Releases
 <!-- releases starts -->
-[voicegateway 0.26.1](https://pypi.org/project/voicegateway/0.26.1/)<br><sub>2026-09-06</sub>
+[voicegateway 0.26.1](https://pypi.org/project/voicegateway/0.26.1/)<br><sub>Sep 2026</sub>
 
-[openrtc 0.19.0](https://pypi.org/project/openrtc/0.19.0/)<br><sub>2026-07-18</sub>
+[openrtc 0.19.0](https://pypi.org/project/openrtc/0.19.0/)<br><sub>Jul 2026</sub>
 
-[envoic 0.3.1](https://pypi.org/project/envoic/0.3.1/)<br><sub>2026-07-06</sub>
+[envoic 0.3.1](https://pypi.org/project/envoic/0.3.1/)<br><sub>Jul 2026</sub>
 
-[locallens 0.0.2](https://pypi.org/project/locallens/0.0.2/)<br><sub>2026-04-17</sub>
+[locallens 0.0.2](https://pypi.org/project/locallens/0.0.2/)<br><sub>Apr 2026</sub>
 
-[fastrtc-whisper-cpp 0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/0.1.2/)<br><sub>2025-05-23</sub>
+[fastrtc-whisper-cpp 0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/0.1.2/)<br><sub>May 2025</sub>
 <!-- releases ends -->
 </td>
 <td valign="top" width="50%">
@@ -96,13 +96,13 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 <!-- packages starts -->
 | Package | What it does | Latest | Downloads |
 |---|---|---|---|
-| **voicegateway** | Observability and inference routing for voice AI | [0.26.1](https://pypi.org/project/voicegateway/) · 2026-09-06 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
-| **openrtc** | Shared memory layer for multi-agent LiveKit workers | [0.19.0](https://pypi.org/project/openrtc/) · 2026-07-18 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
-| **envoic** | Horizontal voice AI infrastructure toolkit | [0.3.1](https://pypi.org/project/envoic/) · 2026-07-06 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/envoic) |
-| **fastrtc-whisper-cpp** | whisper.cpp STT backend for FastRTC | [0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/) · 2025-05-23 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
-| **fastrtc-canary** | NVIDIA Canary STT backend for FastRTC | [0.0.2](https://pypi.org/project/fastrtc-canary/) · 2025-03-21 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
-| **vapiserve** | Custom tool server for Vapi | [0.0.5](https://pypi.org/project/vapiserve/) · 2025-03-16 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
-| **locallens** | Local inference tooling | [0.0.2](https://pypi.org/project/locallens/) · 2026-04-17 | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/locallens) |
+| **voicegateway** | Observability and inference routing for voice AI | [0.26.1](https://pypi.org/project/voicegateway/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
+| **openrtc** | Shared memory layer for multi-agent LiveKit workers | [0.19.0](https://pypi.org/project/openrtc/)<br><sub>Jul 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
+| **envoic** | Horizontal voice AI infrastructure toolkit | [0.3.1](https://pypi.org/project/envoic/)<br><sub>Jul 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/envoic) |
+| **fastrtc-whisper-cpp** | whisper.cpp STT backend for FastRTC | [0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/)<br><sub>May 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
+| **fastrtc-canary** | NVIDIA Canary STT backend for FastRTC | [0.0.2](https://pypi.org/project/fastrtc-canary/)<br><sub>Mar 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
+| **vapiserve** | Custom tool server for Vapi | [0.0.5](https://pypi.org/project/vapiserve/)<br><sub>Mar 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/vapiserve?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/vapiserve) |
+| **locallens** | Local inference tooling | [0.0.2](https://pypi.org/project/locallens/)<br><sub>Apr 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/locallens?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/locallens) |
 <!-- packages ends -->
 
 Python, with Go where it matters.
