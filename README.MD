@@ -54,7 +54,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 [feat: Added documentation for twilio integration](https://github.com/gradio-app/fastrtc/pull/125)<br><sub>gradio-app/fastrtc #125 · 2025-03-06</sub>
 <!-- upstream ends -->
 
-<!-- upstream_count starts -->9<!-- upstream_count ends --> merged PRs across <!-- upstream_projects starts -->8<!-- upstream_projects ends --> projects · [all of them](contributions.md)
+[All <!-- upstream_count starts -->9<!-- upstream_count ends --> merged PRs across <!-- upstream_projects starts -->8<!-- upstream_projects ends --> projects →](contributions.md)
 </td>
 </tr>
 <tr>

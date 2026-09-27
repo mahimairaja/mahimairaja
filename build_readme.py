@@ -89,7 +89,12 @@ TOKEN = os.environ.get('GITHUB_TOKEN', '')
 # --- Fetching -------------------------------------------------------------------------------
 
 def fetch(url: str, *, data: bytes | None = None, accept: str = 'application/json') -> bytes:
-    """GET (or POST) with retries on the transient errors GitHub and PyPI return under load."""
+    """GET (or POST) with retries on the transient errors GitHub and PyPI return under load.
+
+    GitHub signals a rate limit with 429, or with 403 plus a Retry-After header, a zero
+    remaining quota, or "rate limit" in the body. Those wait as long as GitHub asks (up to
+    90 s) and retry; any other error is raised with GitHub's own message, for the log.
+    """
     headers = {'User-Agent': f'{USER}-profile-readme', 'Accept': accept}
     if TOKEN and url.startswith('https://api.github.com/'):
         headers['Authorization'] = f'Bearer {TOKEN}'
@@ -98,8 +103,20 @@ def fetch(url: str, *, data: bytes | None = None, accept: str = 'application/jso
             with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=headers), timeout=30) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code not in (429, 500, 502, 503, 504) or attempt == 3:
-                raise
+            body = e.read()[:300].decode(errors='replace')
+            retry_after = e.headers.get('Retry-After')
+            reset = e.headers.get('X-RateLimit-Reset')
+            limited = e.code == 429 or (e.code == 403 and (
+                retry_after or e.headers.get('X-RateLimit-Remaining') == '0' or 'rate limit' in body.lower()))
+            if not (limited or e.code in (500, 502, 503, 504)) or attempt == 3:
+                raise RuntimeError(f'HTTP {e.code} from {url.split("?")[0]}: {body.strip()}') from None
+            wait = 2 ** attempt
+            if retry_after and retry_after.isdigit():
+                wait = int(retry_after)
+            elif reset and reset.isdigit():
+                wait = int(reset) - int(time.time()) + 1
+            time.sleep(min(max(wait, 1), 90))
+            continue
         except urllib.error.URLError:
             if attempt == 3:
                 raise
