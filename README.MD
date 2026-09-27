@@ -1,7 +1,5 @@
 <img src="assets/banner.svg" alt="Mahimai: build voice products that keep working. From prototype to production." width="100%">
 
-<img src="assets/brand/portrait.webp" alt="Mahimai Raja" width="150" align="right">
-
 I build voice AI systems that hold up in production. Speech models,
 real-time infrastructure, and the orchestration layer in between.
 
@@ -112,13 +110,4 @@ Python, with Go where it matters.
 Available for voice AI consulting.
 [Book a call](https://cal.com/mahimairaja/consulting)
 
-<br>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.svg">
-    <img src="assets/wordmark-light.svg" alt="Mahimai" width="180">
-  </picture>
-</p>
-
-<p align="center"><sub>The waveform and lists above rebuild themselves every six hours. <a href="build_readme.py">How this works</a></sub></p>
+<p align="center"><sub>The lists above rebuild themselves every six hours. <a href="build_readme.py">How this works</a></sub></p>
