@@ -8,7 +8,7 @@ Each section of README.MD sits between a pair of markers,
     <!-- writing ends -->
 
 and only the text between them is rewritten. It also draws the two SVGs under assets/
-(the brand banner, the wordmark and the contribution waveform) and writes contributions.md.
+(the brand banner and the contribution waveform) and writes contributions.md.
 
 Every source is fetched independently. If one fails (a feed is down, an API rate limit),
 that section keeps its previous content and the rest still update, so a bad hour never
@@ -214,6 +214,11 @@ def contribution_days() -> list[tuple[date, int]]:
     return sorted(days)
 
 
+def short_date(iso: str) -> str:
+    """'2026-09-23' -> 'Sep 2026': short and a steady width, so the lists stay aligned."""
+    return datetime.strptime(iso[:10], '%Y-%m-%d').strftime('%b %Y') if iso else ''
+
+
 # --- Rendering: markdown --------------------------------------------------------------------
 
 def replace_chunk(content: str, marker: str, chunk: str, inline: bool = False) -> str:
@@ -230,25 +235,25 @@ def md_escape(text: str) -> str:
 
 
 def writing_md(posts):
-    return '\n\n'.join(f'[{md_escape(p["title"])}]({p["url"]})<br><sub>{p["date"]}</sub>' for p in posts)
+    return '\n\n'.join(f'[{md_escape(p["title"])}]({p["url"]})<br><sub>{short_date(p["date"])}</sub>' for p in posts)
 
 
 def upstream_md(prs, limit=5):
     return '\n\n'.join(
-        f'[{md_escape(p["title"])}]({p["url"]})<br><sub>{p["repo"]} #{p["number"]} · {p["date"]}</sub>'
+        f'[{md_escape(p["title"])}]({p["url"]})<br><sub>{p["repo"]} · {short_date(p["date"])}</sub>'
         for p in prs[:limit])
 
 
 def releases_md(pkgs, limit=5):
     latest = sorted((p for p in pkgs if p['date']), key=lambda p: p['date'], reverse=True)[:limit]
     return '\n\n'.join(
-        f'[{p["name"]} {p["version"]}](https://pypi.org/project/{p["name"]}/{p["version"]}/)<br><sub>{p["date"]}</sub>'
+        f'[{p["name"]} {p["version"]}](https://pypi.org/project/{p["name"]}/{p["version"]}/)<br><sub>{short_date(p["date"])}</sub>'
         for p in latest)
 
 
 def references_md(refs):
     return '\n\n'.join(
-        f'[{r["title"]}]({r["site"]}) · [repo]({r["url"]})<br><sub>★ {r["stars"]:,} · updated {r["updated"]}</sub>'
+        f'[{r["title"]}]({r["site"]}) · [repo]({r["url"]})<br><sub>★ {r["stars"]:,} · updated {short_date(r["updated"])}</sub>'
         for r in refs)
 
 
@@ -258,7 +263,10 @@ def packages_md(pkgs):
         badge = (f'[![PyPI Downloads](https://static.pepy.tech/personalized-badge/{p["name"]}?period=total'
                  f'&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)]'
                  f'(https://pepy.tech/projects/{p["name"]})')
-        latest = f'[{p["version"]}](https://pypi.org/project/{p["name"]}/) · {p["date"]}' if p['date'] else p['version']
+        # The date sits under the version, so the column never wraps mid-date.
+        latest = f'[{p["version"]}](https://pypi.org/project/{p["name"]}/)'
+        if p['date']:
+            latest += f'<br><sub>{short_date(p["date"])}</sub>'
         rows.append(f'| **{p["name"]}** | {p["description"]} | {latest} | {badge} |')
     return '\n'.join(rows)
 
@@ -280,33 +288,18 @@ def contributions_page(prs):
         rows = by_repo[repo]
         lines.append(f'### [{repo}](https://github.com/{repo}) · ★ {rows[0]["stars"]:,}')
         lines.append('')
-        lines.extend(f'- [#{p["number"]} {md_escape(p["title"])}]({p["url"]}) · {p["date"]}' for p in rows)
+        lines.extend(f'- [#{p["number"]} {md_escape(p["title"])}]({p["url"]}) · {short_date(p["date"])}' for p in rows)
         lines.append('')
     return '\n'.join(lines)
 
 
 # --- Rendering: SVG --------------------------------------------------------------------------
 
-# The claw M, from the Mahimai wordmark: three shapes in a 306 x 258 box.
+# The claw M from the Mahimai logo: three shapes in a 306 x 258 box.
 CLAW_M = ('<path d="M 0 1 L 153 113 L 306 0 L 306 33 L 174 133 L 227 106 L 306 53 L 306 78 L 254 117 L 250 106 '
           'L 153 180 L 55 104 L 54 215 L 0 257 Z"/><path d="M 252 174 L 306 141 L 306 227 L 253 258 Z"/>'
           '<path d="M 208 170 L 306 97 L 306 121 Z"/>')
-# "ahimai" in Space Grotesk Bold outlines, as (x offset, path) pairs; the claw M leads the word.
-WORDMARK_GLYPHS = [
-    (813.448, 'M224 -14Q171 -14 129.0 4.5Q87 23 62.5 58.5Q38 94 38 145Q38 196 62.5 230.5Q87 265 130.5 282.5Q174 300 230 300H366V328Q366 363 344.0 385.5Q322 408 274 408Q227 408 204.0 386.5Q181 365 174 331L58 370Q70 408 96.5 439.5Q123 471 167.5 490.5Q212 510 276 510Q374 510 431.0 461.0Q488 412 488 319V134Q488 104 516 104H556V0H472Q435 0 411.0 18.0Q387 36 387 66V67H368Q364 55 350.0 35.5Q336 16 306.0 1.0Q276 -14 224 -14ZM246 88Q299 88 332.5 117.5Q366 147 366 196V206H239Q204 206 184.0 191.0Q164 176 164 149Q164 122 185.0 105.0Q206 88 246 88Z'),
-    (1369.448, 'M70 0V700H196V435H214Q222 451 239.0 467.0Q256 483 284.5 493.5Q313 504 357 504Q415 504 458.5 477.5Q502 451 526.0 404.5Q550 358 550 296V0H424V286Q424 342 396.5 370.0Q369 398 318 398Q260 398 228.0 359.5Q196 321 196 252V0Z'),
-    (1963.448, 'M70 0V496H196V0ZM133 554Q99 554 75.5 576.0Q52 598 52 634Q52 670 75.5 692.0Q99 714 133 714Q168 714 191.0 692.0Q214 670 214 634Q214 598 191.0 576.0Q168 554 133 554Z'),
-    (2207.448, 'M70 0V496H194V442H212Q225 467 255.0 485.5Q285 504 334 504Q387 504 419.0 483.5Q451 463 468 430H486Q503 462 534.0 483.0Q565 504 622 504Q668 504 705.5 484.5Q743 465 765.5 425.5Q788 386 788 326V0H662V317Q662 358 641.0 378.5Q620 399 582 399Q539 399 515.5 371.5Q492 344 492 293V0H366V317Q366 358 345.0 378.5Q324 399 286 399Q243 399 219.5 371.5Q196 344 196 293V0Z'),
-    (3039.448, 'M224 -14Q171 -14 129.0 4.5Q87 23 62.5 58.5Q38 94 38 145Q38 196 62.5 230.5Q87 265 130.5 282.5Q174 300 230 300H366V328Q366 363 344.0 385.5Q322 408 274 408Q227 408 204.0 386.5Q181 365 174 331L58 370Q70 408 96.5 439.5Q123 471 167.5 490.5Q212 510 276 510Q374 510 431.0 461.0Q488 412 488 319V134Q488 104 516 104H556V0H472Q435 0 411.0 18.0Q387 36 387 66V67H368Q364 55 350.0 35.5Q336 16 306.0 1.0Q276 -14 224 -14ZM246 88Q299 88 332.5 117.5Q366 147 366 196V206H239Q204 206 184.0 191.0Q164 176 164 149Q164 122 185.0 105.0Q206 88 246 88Z'),
-    (3595.448, 'M70 0V496H196V0ZM133 554Q99 554 75.5 576.0Q52 598 52 634Q52 670 75.5 692.0Q99 714 133 714Q168 714 191.0 692.0Q214 670 214 634Q214 598 191.0 576.0Q168 554 133 554Z'),
-]
 BRAND = ASSETS / 'brand'
-
-
-def wordmark_svg(fill: str) -> str:
-    glyphs = ''.join(f'<path transform="translate({x} 700) scale(1 -1)" d="{d}"/>' for x, d in WORDMARK_GLYPHS)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 3847.448 730" role="img" aria-label="Mahimai">'
-            f'<g fill="{fill}"><g transform="translate(55 92) scale(2)">{CLAW_M}</g>{glyphs}</g></svg>\n')
 
 
 def banner_svg() -> str:
@@ -377,7 +370,8 @@ def banner_svg() -> str:
 
 
 def waveform_svg(t: dict, days: list[tuple[date, int]], summary: str) -> str:
-    """A year of contributions drawn as audio: one mirrored bar per week, with a playhead."""
+    """A year of contributions drawn as audio: one mirrored bar per week. Still, on purpose: the
+    banner above it is the one thing on the page that moves."""
     weeks: list[tuple[date, int]] = []
     for d, c in days:
         if not weeks or (d - weeks[-1][0]).days >= 7:
@@ -388,13 +382,11 @@ def waveform_svg(t: dict, days: list[tuple[date, int]], summary: str) -> str:
     peak = max((c for _, c in weeks), default=0) or 1
     width, height, left, right, mid, half = 1200, 260, 48, 1152, 134, 72
     step = (right - left) / max(len(weeks), 1)
-    sweep = 9.0
     bars, labels, last_month, last_label = [], [], None, -9
     for i, (start, count) in enumerate(weeks):
         h = 2 if count == 0 else max(4, math.sqrt(count / peak) * half)
         x = left + i * step + step * 0.18
-        delay = i / max(len(weeks), 1) * sweep
-        bars.append(f'<rect class="bar{" zero" if count == 0 else ""}" style="animation-delay:{delay:.2f}s" '
+        bars.append(f'<rect class="bar{" zero" if count == 0 else ""}" '
                     f'x="{x:.1f}" y="{mid - h:.1f}" width="{step * 0.64:.1f}" height="{2 * h:.1f}" rx="{min(3, step * 0.3):.1f}">'
                     f'<title>Week of {start.isoformat()}: {count} contributions</title></rect>')
         # A month label where the month turns, if the last one is at least three weeks back.
@@ -404,15 +396,11 @@ def waveform_svg(t: dict, days: list[tuple[date, int]], summary: str) -> str:
         last_month = start.month
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(summary)}">
 <style>
-  .bar {{ fill: url(#wave); opacity: 0.6; animation: lit {sweep}s linear infinite; }}
-  .zero {{ fill: {t['line']}; opacity: 1; animation: none; }}
+  .bar {{ fill: url(#wave); opacity: 0.9; }}
+  .zero {{ fill: {t['line']}; opacity: 1; }}
   .axis {{ font: 500 15px {MONO}; fill: {t['muted']}; }}
   .title {{ font: 600 21px {SANS}; fill: {t['ink']}; }}
   .sub {{ font: 500 17px {MONO}; fill: {t['muted']}; }}
-  .head {{ stroke: {t['accent2']}; stroke-width: 2; animation: sweep {sweep}s linear infinite; }}
-  @keyframes lit {{ 0% {{ opacity: 1; }} 12% {{ opacity: 0.6; }} 100% {{ opacity: 0.6; }} }}
-  @keyframes sweep {{ from {{ transform: translateX(0); }} to {{ transform: translateX({right - left}px); }} }}
-  @media (prefers-reduced-motion: reduce) {{ .bar, .head {{ animation: none; }} .bar {{ opacity: 0.85; }} .head {{ display: none; }} }}
 </style>
 <defs><linearGradient id="wave" gradientUnits="userSpaceOnUse" x1="{left}" x2="{right}" y1="0" y2="0"><stop offset="0" stop-color="{t['accent']}"/><stop offset="1" stop-color="{t['blue']}"/></linearGradient></defs>
 <rect width="{width}" height="{height}" rx="20" fill="{t['surface']}" stroke="{t['line']}"/>
@@ -420,7 +408,6 @@ def waveform_svg(t: dict, days: list[tuple[date, int]], summary: str) -> str:
 <text class="sub" x="{right}" y="40" text-anchor="end">{html.escape(summary)}</text>
 <line x1="{left}" x2="{right}" y1="{mid}" y2="{mid}" stroke="{t['line']}"/>
 {''.join(bars)}
-<line class="head" x1="{left}" x2="{left}" y1="{mid - half - 8}" y2="{mid + half + 8}"/>
 {''.join(labels)}
 </svg>
 '''
@@ -441,8 +428,6 @@ def main() -> None:
     readme = README.read_text()
     ASSETS.mkdir(exist_ok=True)
     (ASSETS / 'banner.svg').write_text(banner_svg())
-    for theme, t in THEMES.items():
-        (ASSETS / f'wordmark-{theme}.svg').write_text(wordmark_svg(t['ink']))
 
     posts = section('writing', blog_posts)
     prs = section('upstream', merged_upstream_prs)
