@@ -62,7 +62,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Releases
 <!-- releases starts -->
-[openrtc 0.20.0](https://pypi.org/project/openrtc/0.20.0/)<br><sub>Sep 2026</sub>
+[openrtc 0.20.1](https://pypi.org/project/openrtc/0.20.1/)<br><sub>Sep 2026</sub>
 
 [voicegateway 0.26.1](https://pypi.org/project/voicegateway/0.26.1/)<br><sub>Sep 2026</sub>
 
@@ -97,7 +97,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 | Package | What it does | Latest | Downloads |
 |---|---|---|---|
 | **voicegateway** | Observability and inference routing for voice AI | [0.26.1](https://pypi.org/project/voicegateway/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
-| **openrtc** | Shared memory layer for multi-agent LiveKit workers | [0.20.0](https://pypi.org/project/openrtc/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
+| **openrtc** | Shared memory layer for multi-agent LiveKit workers | [0.20.1](https://pypi.org/project/openrtc/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
 | **envoic** | Horizontal voice AI infrastructure toolkit | [0.3.1](https://pypi.org/project/envoic/)<br><sub>Jul 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/envoic) |
 | **fastrtc-whisper-cpp** | whisper.cpp STT backend for FastRTC | [0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/)<br><sub>May 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
 | **fastrtc-canary** | NVIDIA Canary STT backend for FastRTC | [0.0.2](https://pypi.org/project/fastrtc-canary/)<br><sub>Mar 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-canary?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-canary) |
