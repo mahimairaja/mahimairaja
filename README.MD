@@ -28,7 +28,7 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
-[How your voice travels through WebRTC: Voice AI agents edition](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>Sep 2026</sub>
+[How your voice travels through WebRTC](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>Sep 2026</sub>
 
 [Your smoke run is lying to you](https://mahimai.ca/blog/your-smoke-run-is-lying-to-you)<br><sub>Aug 2026</sub>
 
@@ -83,7 +83,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 [Awesome TTS](https://tts.mahimai.ca) · [repo](https://github.com/mahimairaja/tts)<br><sub>★ 19 · updated Sep 2026</sub>
 
-[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 4 · updated Sep 2026</sub>
+[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 5 · updated Sep 2026</sub>
 
 [Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Sep 2026</sub>
 <!-- references ends -->
