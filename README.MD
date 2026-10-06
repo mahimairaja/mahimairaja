@@ -28,6 +28,8 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
+[GPT-Live with LiveKit: Beyond the First Working Call](https://mahimai.ca/blog/gpt-live-livekit-beyond-first-call)<br><sub>Oct 2026</sub>
+
 [WebRTC, on one page](https://mahimai.ca/blog/webrtc-one-pager)<br><sub>Oct 2026</sub>
 
 [How your voice travels through WebRTC](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>Sep 2026</sub>
@@ -35,8 +37,6 @@ AI on the open stack: LiveKit and Pipecat.
 [Your smoke run is lying to you](https://mahimai.ca/blog/your-smoke-run-is-lying-to-you)<br><sub>Aug 2026</sub>
 
 [Building a phone line in PyTorch](https://mahimai.ca/blog/building-a-phone-line-in-pytorch)<br><sub>Aug 2026</sub>
-
-[The normaliser that scored itself](https://mahimai.ca/blog/the-normaliser-that-scored-itself)<br><sub>Aug 2026</sub>
 <!-- writing ends -->
 
 More on [mahimai.ca/blog](https://mahimai.ca/blog)
@@ -64,9 +64,9 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Releases
 <!-- releases starts -->
-[openrtc 0.20.1](https://pypi.org/project/openrtc/0.20.1/)<br><sub>Sep 2026</sub>
+[voicegateway 0.27.0](https://pypi.org/project/voicegateway/0.27.0/)<br><sub>Oct 2026</sub>
 
-[voicegateway 0.26.1](https://pypi.org/project/voicegateway/0.26.1/)<br><sub>Sep 2026</sub>
+[openrtc 0.20.1](https://pypi.org/project/openrtc/0.20.1/)<br><sub>Sep 2026</sub>
 
 [envoic 0.3.1](https://pypi.org/project/envoic/0.3.1/)<br><sub>Jul 2026</sub>
 
@@ -98,7 +98,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 <!-- packages starts -->
 | Package | What it does | Latest | Downloads |
 |---|---|---|---|
-| **voicegateway** | Observability and inference routing for voice AI | [0.26.1](https://pypi.org/project/voicegateway/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
+| **voicegateway** | Observability and inference routing for voice AI | [0.27.0](https://pypi.org/project/voicegateway/)<br><sub>Oct 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/voicegateway?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/voicegateway) |
 | **openrtc** | Shared memory layer for multi-agent LiveKit workers | [0.20.1](https://pypi.org/project/openrtc/)<br><sub>Sep 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/openrtc?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/openrtc) |
 | **envoic** | Horizontal voice AI infrastructure toolkit | [0.3.1](https://pypi.org/project/envoic/)<br><sub>Jul 2026</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/envoic?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/envoic) |
 | **fastrtc-whisper-cpp** | whisper.cpp STT backend for FastRTC | [0.1.2](https://pypi.org/project/fastrtc-whisper-cpp/)<br><sub>May 2025</sub> | [![PyPI Downloads](https://static.pepy.tech/personalized-badge/fastrtc-whisper-cpp?period=total&units=INTERNATIONAL_SYSTEM&left_color=ORANGE&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/fastrtc-whisper-cpp) |
