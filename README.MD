@@ -28,15 +28,15 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
+[Voice Agent Appointment Booking: Book by Slot ID](https://mahimai.ca/blog/voice-agent-appointment-booking)<br><sub>Oct 2026</sub>
+
+[Voice Agent State: Let the Tool Own the Count](https://mahimai.ca/blog/voice-agent-state-water-tracker)<br><sub>Oct 2026</sub>
+
+[FNOL Voice Agent: Validate Every Field in the Tool](https://mahimai.ca/blog/voice-claim-intake-fnol-agent)<br><sub>Oct 2026</sub>
+
+[Voice Agent RAG: Show the Source, Admit the Miss](https://mahimai.ca/blog/voice-rag-tenant-rights-sources)<br><sub>Oct 2026</sub>
+
 [GPT-Live with LiveKit: Beyond the First Working Call](https://mahimai.ca/blog/gpt-live-livekit-beyond-first-call)<br><sub>Oct 2026</sub>
-
-[WebRTC, on one page](https://mahimai.ca/blog/webrtc-one-pager)<br><sub>Oct 2026</sub>
-
-[How your voice travels through WebRTC](https://mahimai.ca/blog/how-your-voice-travels-through-webrtc)<br><sub>Sep 2026</sub>
-
-[Your smoke run is lying to you](https://mahimai.ca/blog/your-smoke-run-is-lying-to-you)<br><sub>Aug 2026</sub>
-
-[Building a phone line in PyTorch](https://mahimai.ca/blog/building-a-phone-line-in-pytorch)<br><sub>Aug 2026</sub>
 <!-- writing ends -->
 
 More on [mahimai.ca/blog](https://mahimai.ca/blog)

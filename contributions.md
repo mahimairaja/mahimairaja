@@ -6,11 +6,11 @@ Pull requests I wrote that were merged into other people's projects with at leas
 
 - [#1356 🐛 Fix `--help` text alignment when using `typer.style()` in option descriptions](https://github.com/fastapi/typer/pull/1356) · Feb 2026
 
-### [livekit/agents](https://github.com/livekit/agents) · ★ 14,644
+### [livekit/agents](https://github.com/livekit/agents) · ★ 14,649
 
 - [#4910 feat: add livekit-plugins-sambanova with LLM support](https://github.com/livekit/agents/pull/4910) · Feb 2026
 
-### [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) · ★ 10,966
+### [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) · ★ 10,968
 
 - [#19958 Refactored with single dispatch generic function implementation](https://github.com/openvinotoolkit/openvino/pull/19958) · Sep 2023
 
@@ -19,7 +19,7 @@ Pull requests I wrote that were merged into other people's projects with at leas
 - [#324 Feat: FastRTC version of Whisper CPP speech to text to Docs](https://github.com/gradio-app/fastrtc/pull/324) · May 2025
 - [#125 feat: Added documentation for twilio integration](https://github.com/gradio-app/fastrtc/pull/125) · Mar 2025
 
-### [jupyter-naas/awesome-notebooks](https://github.com/jupyter-naas/awesome-notebooks) · ★ 3,016
+### [jupyter-naas/awesome-notebooks](https://github.com/jupyter-naas/awesome-notebooks) · ★ 3,017
 
 - [#2325 feat: Added LlamaIndex integration with Neo4j](https://github.com/jupyter-naas/awesome-notebooks/pull/2325) · Oct 2023
 
