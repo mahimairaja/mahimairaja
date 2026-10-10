@@ -28,15 +28,15 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
-[Voice Agent Appointment Booking: Book by Slot ID](https://mahimai.ca/blog/voice-agent-appointment-booking)<br><sub>Oct 2026</sub>
+[Bilingual Voice Agent: When to Switch Languages](https://mahimai.ca/blog/bilingual-voice-agent-language-switching)<br><sub>Oct 2026</sub>
 
-[Voice Agent State: Let the Tool Own the Count](https://mahimai.ca/blog/voice-agent-state-water-tracker)<br><sub>Oct 2026</sub>
+[Build a Real-Time AI Sales Copilot with LiveKit](https://mahimai.ca/blog/ai-sales-copilot-livekit)<br><sub>Oct 2026</sub>
 
-[FNOL Voice Agent: Validate Every Field in the Tool](https://mahimai.ca/blog/voice-claim-intake-fnol-agent)<br><sub>Oct 2026</sub>
+[Config-Driven Voice Agents: Swap Prompts and Tools Mid-Call](https://mahimai.ca/blog/config-driven-voice-agents-live-updates)<br><sub>Oct 2026</sub>
 
-[Voice Agent RAG: Show the Source, Admit the Miss](https://mahimai.ca/blog/voice-rag-tenant-rights-sources)<br><sub>Oct 2026</sub>
+[Full Duplex vs Cascade Voice Agents: A Blind Test](https://mahimai.ca/blog/full-duplex-vs-cascade-voice-agent)<br><sub>Oct 2026</sub>
 
-[GPT-Live with LiveKit: Beyond the First Working Call](https://mahimai.ca/blog/gpt-live-livekit-beyond-first-call)<br><sub>Oct 2026</sub>
+[Live QA for Voice Agents: Grade Every Call as It Runs](https://mahimai.ca/blog/live-qa-voice-agent-returns)<br><sub>Oct 2026</sub>
 <!-- writing ends -->
 
 More on [mahimai.ca/blog](https://mahimai.ca/blog)
