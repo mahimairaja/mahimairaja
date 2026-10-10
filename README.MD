@@ -79,7 +79,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Reference lists I maintain
 <!-- references starts -->
-[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 333 · updated Sep 2026</sub>
+[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 334 · updated Sep 2026</sub>
 
 [Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 8 · updated Sep 2026</sub>
 
