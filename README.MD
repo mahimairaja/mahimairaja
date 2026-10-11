@@ -28,9 +28,9 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
-[Bilingual Voice Agent: When to Switch Languages](https://mahimai.ca/blog/bilingual-voice-agent-language-switching)<br><sub>Oct 2026</sub>
-
 [Build a Real-Time AI Sales Copilot with LiveKit](https://mahimai.ca/blog/ai-sales-copilot-livekit)<br><sub>Oct 2026</sub>
+
+[Bilingual Voice Agent: When to Switch Languages](https://mahimai.ca/blog/bilingual-voice-agent-language-switching)<br><sub>Oct 2026</sub>
 
 [Config-Driven Voice Agents: Swap Prompts and Tools Mid-Call](https://mahimai.ca/blog/config-driven-voice-agents-live-updates)<br><sub>Oct 2026</sub>
 
