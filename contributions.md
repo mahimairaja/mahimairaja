@@ -6,7 +6,7 @@ Pull requests I wrote that were merged into other people's projects with at leas
 
 - [#1356 🐛 Fix `--help` text alignment when using `typer.style()` in option descriptions](https://github.com/fastapi/typer/pull/1356) · Feb 2026
 
-### [livekit/agents](https://github.com/livekit/agents) · ★ 14,736
+### [livekit/agents](https://github.com/livekit/agents) · ★ 14,741
 
 - [#4910 feat: add livekit-plugins-sambanova with LLM support](https://github.com/livekit/agents/pull/4910) · Feb 2026
 
@@ -23,7 +23,7 @@ Pull requests I wrote that were merged into other people's projects with at leas
 
 - [#2325 feat: Added LlamaIndex integration with Neo4j](https://github.com/jupyter-naas/awesome-notebooks/pull/2325) · Oct 2023
 
-### [castorini/anserini](https://github.com/castorini/anserini) · ★ 1,200
+### [castorini/anserini](https://github.com/castorini/anserini) · ★ 1,199
 
 - [#3364 Add to onboarding reproduction logs](https://github.com/castorini/anserini/pull/3364) · Aug 2026
 
