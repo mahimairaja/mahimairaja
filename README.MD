@@ -81,7 +81,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 <!-- references starts -->
 [Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 335 · updated Sep 2026</sub>
 
-[Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 8 · updated Sep 2026</sub>
+[Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 9 · updated Sep 2026</sub>
 
 [Awesome TTS](https://tts.mahimai.ca) · [repo](https://github.com/mahimairaja/tts)<br><sub>★ 19 · updated Sep 2026</sub>
 
