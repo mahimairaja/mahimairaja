@@ -87,7 +87,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 [Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 6 · updated Sep 2026</sub>
 
-[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Sep 2026</sub>
+[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Oct 2026</sub>
 <!-- references ends -->
 </td>
 </tr>
