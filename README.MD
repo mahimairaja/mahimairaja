@@ -85,7 +85,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 [Awesome TTS](https://tts.mahimai.ca) · [repo](https://github.com/mahimairaja/tts)<br><sub>★ 19 · updated Oct 2026</sub>
 
-[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 6 · updated Sep 2026</sub>
+[Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 7 · updated Sep 2026</sub>
 
 [Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Oct 2026</sub>
 <!-- references ends -->
