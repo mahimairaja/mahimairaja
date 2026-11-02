@@ -79,7 +79,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 #### Reference lists I maintain
 <!-- references starts -->
-[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 337 · updated Oct 2026</sub>
+[Voice AI](https://voiceai.mahimai.ca) · [repo](https://github.com/mahimairaja/voiceai)<br><sub>★ 338 · updated Oct 2026</sub>
 
 [Realtime Voice](https://realtime.mahimai.ca) · [repo](https://github.com/mahimairaja/realtime)<br><sub>★ 9 · updated Oct 2026</sub>
 
@@ -87,7 +87,7 @@ More on [mahimai.ca/blog](https://mahimai.ca/blog)
 
 [Voice Prices](https://prices.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-prices)<br><sub>★ 7 · updated Sep 2026</sub>
 
-[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 2 · updated Oct 2026</sub>
+[Voice AI Skills](https://skills.mahimai.ca) · [repo](https://github.com/mahimailabs/voice-ai-skills)<br><sub>★ 3 · updated Oct 2026</sub>
 <!-- references ends -->
 </td>
 </tr>
