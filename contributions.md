@@ -6,11 +6,11 @@ Pull requests I wrote that were merged into other people's projects with at leas
 
 - [#1356 🐛 Fix `--help` text alignment when using `typer.style()` in option descriptions](https://github.com/fastapi/typer/pull/1356) · Feb 2026
 
-### [livekit/agents](https://github.com/livekit/agents) · ★ 15,144
+### [livekit/agents](https://github.com/livekit/agents) · ★ 15,150
 
 - [#4910 feat: add livekit-plugins-sambanova with LLM support](https://github.com/livekit/agents/pull/4910) · Feb 2026
 
-### [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) · ★ 11,133
+### [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) · ★ 11,136
 
 - [#19958 Refactored with single dispatch generic function implementation](https://github.com/openvinotoolkit/openvino/pull/19958) · Sep 2023
 
@@ -23,7 +23,7 @@ Pull requests I wrote that were merged into other people's projects with at leas
 
 - [#2325 feat: Added LlamaIndex integration with Neo4j](https://github.com/jupyter-naas/awesome-notebooks/pull/2325) · Oct 2023
 
-### [castorini/anserini](https://github.com/castorini/anserini) · ★ 1,227
+### [castorini/anserini](https://github.com/castorini/anserini) · ★ 1,229
 
 - [#3364 Add to onboarding reproduction logs](https://github.com/castorini/anserini/pull/3364) · Aug 2026
 
