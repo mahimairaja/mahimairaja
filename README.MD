@@ -28,15 +28,7 @@ AI on the open stack: LiveKit and Pipecat.
 
 #### Writing
 <!-- writing starts -->
-[A LiveKit Voice Agent That Runs With the Wi-Fi Off](https://mahimai.ca/blog/local-livekit-voice-agent-offline)<br><sub>Oct 2026</sub>
-
-[Build a Real-Time AI Sales Copilot with LiveKit](https://mahimai.ca/blog/ai-sales-copilot-livekit)<br><sub>Oct 2026</sub>
-
-[Bilingual Voice Agent: When to Switch Languages](https://mahimai.ca/blog/bilingual-voice-agent-language-switching)<br><sub>Oct 2026</sub>
-
-[Config-Driven Voice Agents: Swap Prompts and Tools Mid-Call](https://mahimai.ca/blog/config-driven-voice-agents-live-updates)<br><sub>Oct 2026</sub>
-
-[Full Duplex vs Cascade Voice Agents: A Blind Test](https://mahimai.ca/blog/full-duplex-vs-cascade-voice-agent)<br><sub>Oct 2026</sub>
+[What is SIPREC? How to get live call audio into an AI agent](https://mahimai.ca/blog/siprec-explained)<br><sub>Nov 2026</sub>
 <!-- writing ends -->
 
 More on [mahimai.ca/blog](https://mahimai.ca/blog)
